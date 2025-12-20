@@ -1,24 +1,28 @@
 # Wordle Game & Solver (C)
 
-This project is a C implementation of the **Wordle game**, including:
-- A **human-playable Wordle game**
-- An **automatic solver**
-- A **benchmark mode** to test solver performance
+This project is a C implementation of the Wordle game.
+It includes a human playable mode and an automatic solver.
 
-The project was developed as part of an algorithms and data structures course.
+## Requirements
+- GCC compiler
+- Make
+- Linux / macOS / Windows (MSYS2 or Git Bash)
 
----
+## Compile
+make
 
-## Features
+## Run
+./wordle
+or on Windows:
+./wordle.exe
 
-- Load a dictionary of valid 5-letter words from a text file
-- Correct Wordle feedback (GREEN, YELLOW, GRAY), including duplicate letters
-- Human play mode
-- Solver mode that automatically guesses the word
-- Benchmark mode to evaluate solver performance
-- Feedback is shown even for words not in the dictionary (with a warning)
+## Usage
+After running the program, choose one option from the menu:
+1. Play Wordle (human player)
+2. Watch solver play
+3. Run solver benchmark
+4. Exit
 
----
-
-## Project Structure
-
+## Dictionary
+The dictionary is stored in words.txt.
+Each word has exactly 5 uppercase letters and is on its own line.
